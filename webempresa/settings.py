@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'services.apps.ServicesConfig',
     'social.apps.SocialConfig',
     'pages.apps.PagesConfig',
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -116,3 +117,9 @@ STATIC_URL = '/static/'
 #media config
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#Email config
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = '4dce053d73b852'
+EMAIL_HOST_PASSWORD = '2ec1d14936957f'
+EMAIL_PORT = '2525'
