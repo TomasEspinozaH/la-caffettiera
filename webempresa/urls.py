@@ -9,6 +9,8 @@ urlpatterns = [
 	path('services/', include('services.urls')),
 	#paths del services
 	path('blog/', include('blog.urls')),
+	#paths del pages
+	path('page/', include('pages.urls')),
 	#paths del admin
 	path('admin/', admin.site.urls),
 ]
